@@ -1,0 +1,7 @@
+<h1>All our flats</h1>
+
+<ul class="list-group list-group-flush">
+  <% @flats.each do |flat| %>
+    <li class="list-group-item"><%= link_to flat.name, flat_path(flat) %></li>
+  <% end %>
+</ul>
